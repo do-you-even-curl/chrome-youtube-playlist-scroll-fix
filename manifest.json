@@ -1,0 +1,33 @@
+{
+    "name": "YouTube Playlist Scroll Fix",
+    "version": "0.1",
+    "description": "Fixes the bug where YouTube would not automatically scroll to the current position in large playlists.",
+    "permissions": ["declarativeContent", "storage"],
+    "background": {
+        "scripts": ["js/background.js"],
+        "persistent": true
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.youtube.com/watch*list=*"],
+            "js": ["js/jquery-3.3.1.slim.min.js", "js/content.js"]
+        }
+    ],
+    "page_action": {
+        "default_popup": "html/popup.html",
+        "default_icon": {
+            "16": "images/icon16.png",
+            "32": "images/icon32.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png"
+        }
+    },
+    "options_page": "html/options.html",
+    "icons": {
+        "16": "images/icon16.png",
+        "32": "images/icon32.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "manifest_version": 2
+}
