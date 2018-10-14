@@ -6,3 +6,8 @@ Improvements and bugfixes welcome.
 https://github.com/do-you-even-curl/chrome-youtube-playlist-scroll-fix
 
 I wanted to put this on the Chrome Web Store but Google wants a $5 fee to upload stuff there. But I don't see myself paying money to Google to be able to upload a fix for their product. Feel free to upload it yourself if you want.
+
+## install
+1. Go to **chrome://extensions**.
+2. Enable **Developer mode**.
+3. Click **LOAD UNPACKED**.
